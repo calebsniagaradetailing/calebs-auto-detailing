@@ -12,11 +12,11 @@ body {
 
 .hero {
     background:
-        linear-gradient(rgba(0,0,0,.75), 
-rgba(0,0,0,.75)),
+        linear-gradient(rgba(0,0,0,.30), 
+rgba(0,0,0,.30)),
        url("CALEB’S AUTO DETAILING_20260320_203438_0000.png");
 
-    background-size: 100%;
+    background-size: 140%;
     background-repeat: no-repeat;
     background-position: center;
 
