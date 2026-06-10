@@ -16,9 +16,9 @@ body {
 rgba(0,0,0,.30)),
        url("CALEB’S AUTO DETAILING_20260320_203438_0000.png");
 
-    background-size: 140%;
+    background-size: 160%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 30%;
 
     color: white;
     padding: 80px 40px;
