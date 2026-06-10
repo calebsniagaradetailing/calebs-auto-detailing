@@ -60,3 +60,14 @@ ul {
     display: block;
     margin: 0 auto 10px auto;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
