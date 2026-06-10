@@ -19,12 +19,9 @@ body {
 }
 
 
-.hero-logo {
-    width: 90%;
-    max-width: 700px;
-    display: block;
-    margin: 0 auto 20px auto;
-}
+<img src="CALEB'S AUTO DETAILING_20260320_203438_0000.png"
+     alt="Caleb's Auto Detailing"
+     class="hero-logo">
 
 .hero h1 {
   font-size: 42px;
