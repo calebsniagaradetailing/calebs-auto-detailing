@@ -40,7 +40,7 @@
   <nav class="nav-tabs" aria-label="Main navigation">
     <a href="#services">Services</a>
     <a href="#pricing">Pricing</a>
-    <a href="#contact">Quote</a>
+    <a href="#quote">Quote</a>
 
     <a href="https://g.page/r/Cba6g3mGWpLaEBE/review"
        target="_blank"
@@ -157,8 +157,89 @@
         <p class="pricing-custom">Ceramic coatings, paint enhancement, severe pet hair, heavy staining, and unusually difficult vehicles: <strong>Custom Quote</strong>.</p>
       </div>
     </section>
+ <section class="quote-section anchor-target" id="quote">
+  <div class="container">
 
-    <section class="section-dark mobile-section" id="mobile" aria-labelledby="mobile-heading">
+    <div class="section-header">
+      <span class="label">Quick & Easy</span>
+      <h2>Start Your Quote</h2>
+      <div class="divider"></div>
+      <p class="section-note">
+        Tell me a little about your vehicle. No commitment required.
+      </p>
+    </div>
+
+    <form class="quote-form" id="quoteForm">
+
+      <div class="quote-row">
+        <div class="quote-field">
+          <label for="quoteName">Name</label>
+          <input
+            type="text"
+            id="quoteName"
+            name="name"
+            placeholder="Your name"
+            required>
+        </div>
+
+        <div class="quote-field">
+          <label for="quotePhone">Phone</label>
+          <input
+            type="tel"
+            id="quotePhone"
+            name="phone"
+            placeholder="(716) 555-1234"
+            required>
+        </div>
+      </div>
+
+      <div class="quote-field">
+        <label for="quoteVehicle">Vehicle</label>
+        <input
+          type="text"
+          id="quoteVehicle"
+          name="vehicle"
+          placeholder="Example: 2022 Chevy Tahoe">
+      </div>
+
+      <div class="quote-field">
+        <label for="quoteService">What are you interested in?</label>
+
+        <select id="quoteService" name="service">
+          <option value="">Not sure yet</option>
+          <option>Interior Detailing</option>
+          <option>Exterior Detailing</option>
+          <option>Full Detail</option>
+          <option>Paint Enhancement</option>
+          <option>Ceramic Coating</option>
+          <option>Maintenance Detail</option>
+          <option>Other / Custom Quote</option>
+        </select>
+      </div>
+
+      <div class="quote-field">
+        <label for="quoteMessage">Anything I should know?</label>
+        <textarea
+          id="quoteMessage"
+          name="message"
+          rows="4"
+          placeholder="Pet hair, stains, vehicle condition, preferred day, or anything else..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary quote-submit">
+        START MY QUOTE
+      </button>
+
+      <p class="quote-small">
+        No payment or commitment required. I'll follow up with you directly.
+      </p>
+
+    </form>
+
+  </div>
+ </section>
+
+  <section class="section-dark mobile-section" id="mobile" aria-labelledby="mobile-heading">
       <div class="container">
         <div class="mobile-detailing-card">
           <div>
