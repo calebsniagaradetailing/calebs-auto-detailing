@@ -639,6 +639,99 @@ a.contact-value:hover { color: var(--gold); }
   text-align: center;
 }
 
+/* — QUOTE SECTION — */
+
+.quote-section {
+  padding: 90px 0;
+  background:
+    radial-gradient(
+      ellipse 70% 45% at 50% 0%,
+      rgba(201, 165, 80, 0.10),
+      transparent 65%
+    ),
+    var(--dark-1);
+}
+
+.quote-form {
+  max-width: 720px;
+  margin: 40px auto 0;
+  padding: 36px;
+  background: var(--dark-3);
+  border: 1px solid rgba(201, 165, 80, 0.25);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+}
+
+.quote-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.quote-field {
+  margin-bottom: 20px;
+}
+
+.quote-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.quote-field input,
+.quote-field select,
+.quote-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: var(--dark-2);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.quote-field input::placeholder,
+.quote-field textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.quote-field input:focus,
+.quote-field select:focus,
+.quote-field textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 165, 80, 0.10);
+}
+
+.quote-field select option {
+  background: var(--dark-2);
+  color: var(--text-primary);
+}
+
+.quote-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.quote-submit {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+.quote-small {
+  margin-top: 16px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .pricing-grid {
@@ -689,4 +782,23 @@ a.contact-value:hover { color: var(--gold); }
  .nav-inner {
   padding: 0 14px;
  }
+   .quote-section {
+  padding: 65px 0;
+}
+
+.quote-form {
+  padding: 24px 18px;
+  margin-top: 28px;
+}
+
+.quote-row {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.quote-field input,
+.quote-field select,
+.quote-field textarea {
+  font-size: 16px;
+}
 }
